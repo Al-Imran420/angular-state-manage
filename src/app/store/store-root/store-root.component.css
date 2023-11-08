@@ -1,0 +1,9 @@
+.main_area{}
+.header{}
+.body{}
+.footer{
+    text-align: center;
+    padding: 15px;
+    margin-top: 60px;
+    background-color: #333333;
+}

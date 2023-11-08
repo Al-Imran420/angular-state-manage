@@ -1,0 +1,108 @@
+/* Cart header */
+.cart_header{
+    width: 100%;
+    margin-top: 60px;
+}
+.cart_header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cart_header ul li{
+    list-style: none;
+    font-size: 24px;
+    color: #333333;
+}
+
+
+/* Cart items */
+.cart_area{
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+.cart{
+    position: relative;
+}
+.cart .list_container{
+    position: relative;
+    width: 100%;
+    right: 0;
+    border: 1px solid #333333;
+    background-color: #ffffff;
+    max-height: 600px;
+    overflow-y: auto;
+}
+.cart .list_container .list_items{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    border-bottom: 1px solid #333333;
+    padding: 10px;
+}
+.cart .list_container .list_items:last-child{
+    border-bottom: 0px;
+}
+.cart .list_container .list_items img{
+    margin-right: 15px;
+}
+.cart .list_container .list_items h3{
+    font-size: 18px;
+}
+.cart .list_container .list_items p{
+    font-size: 16px;
+}
+.cart .list_container .list_items button{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    height: 26px;
+    display: block;
+    margin: auto;
+    font-size: 18px;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+/* Cart footer */
+.cart_footer{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+.cart_footer ul{
+    display: flex;
+    justify-content: space-between;
+}
+.cart_footer ul li{
+    list-style: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1;
+}
+
+/* Not found */
+.not_found{
+    width: 100%;
+    min-height: 300px;
+    background-color: #f3f3f3;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.not_found h3{
+    font-size: 36px;
+    color: #333333;
+    font-weight: 300;
+}
+.not_found i{
+    font-size: 46px;
+    margin-top: 15px;
+    color: var(--drak-bg-color);
+}

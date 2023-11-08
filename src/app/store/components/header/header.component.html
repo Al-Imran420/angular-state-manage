@@ -1,0 +1,47 @@
+<section class="header">
+    <div class="container">
+        <div class="header_area">
+            <div class="log_area">
+                <h3>LOGO</h3>
+            </div>
+            <div class="search_area">
+                <input type="text" placeholder="Search">
+                <button type="submit"><i class="bi bi-search"></i></button>
+            </div>
+            <div class="cart_area">
+                <div class="favorit">
+                    <i class="bi bi-heart"></i>
+                    <span>0</span>
+                </div>
+                <div class="cart">
+                    <div class="cart_icon">
+                        <i class="bi bi-cart"></i>
+                        <span>{{carts.length}}</span>
+                    </div>
+                    <ul *ngIf="sum > 0" class="list_container">
+                        <li class="cart_summary">Total: {{sum | currency}}</li>
+                        <li class="list_items" *ngFor="let product of carts">
+                            <img width="60px" src="{{product.image}}" alt="">
+                            <div>
+                                <h3>{{product.name}}</h3>
+                                <p>{{product.price}}</p>
+                            </div>
+                            <button (click)="deleteCartIteam(product)"><i class="bi bi-x"></i></button>
+                        </li>
+                        <li class="cart_checkout" routerLink="cart">Checkout</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="nav">
+    <div class="container">
+        <ul>
+            <li routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</li>
+            <li routerLink="about" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">About</li>
+            <li routerLink="shop" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Store</li>
+        </ul>
+    </div>
+</section>
